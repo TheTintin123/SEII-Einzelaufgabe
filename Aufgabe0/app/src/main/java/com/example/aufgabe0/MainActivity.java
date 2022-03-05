@@ -25,6 +25,16 @@ public class MainActivity extends AppCompatActivity {
         EditText txt = findViewById(R.id.inputNumber);
     }
 
-
+    public boolean isPrime(int digit) {
+        if (digit <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= digit/2; ++i) {
+            if (digit % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 }
