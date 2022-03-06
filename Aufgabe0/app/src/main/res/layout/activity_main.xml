@@ -8,16 +8,16 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="158dp"
-        android:layout_height="59dp"
-        android:onClick="onButtonClick"
-        android:text="Abschicken"
+        android:layout_width="143dp"
+        android:layout_height="46dp"
+        android:onClick="onCalcButtonClick"
+        android:text="Kalkulieren"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <EditText
         android:id="@+id/inputNumber"
@@ -50,13 +50,39 @@
         android:id="@+id/outputField"
         android:layout_width="194dp"
         android:layout_height="41dp"
-        android:text="Antwort vom Server"
         android:gravity="center"
+        android:text="Ergebnis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569" />
+        app:layout_constraintVertical_bias="0.742" />
+
+    <Button
+        android:id="@+id/connectionButton"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:text="Ask Server"
+        android:onClick="onConnectionButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <TextView
+        android:id="@+id/outputServer"
+        android:layout_width="145dp"
+        android:layout_height="221dp"
+        android:gravity="center"
+        android:text="Antwort vom Server"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
