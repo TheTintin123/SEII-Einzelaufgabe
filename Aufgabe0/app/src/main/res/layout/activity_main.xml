@@ -8,81 +8,101 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="143dp"
-        android:layout_height="46dp"
+        android:layout_width="146dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#539FC6"
         android:onClick="onCalcButtonClick"
         android:text="Kalkulieren"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <EditText
         android:id="@+id/inputNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
         android:gravity="center"
+        android:inputType="number"
+        android:maxLength="8"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintVertical_bias="0.36" />
 
     <TextView
         android:id="@+id/textMatrikel"
-        android:layout_width="264dp"
-        android:layout_height="24dp"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
         android:gravity="center"
         android:text="Gib deine Matrikelnummer ein"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186" />
+        app:layout_constraintVertical_bias="0.288" />
 
     <TextView
         android:id="@+id/outputField"
-        android:layout_width="194dp"
+        android:layout_width="145dp"
         android:layout_height="41dp"
-        android:gravity="center"
+        android:gravity="bottom|center"
         android:text="Ergebnis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/connectionButton"
         android:layout_width="146dp"
-        android:layout_height="44dp"
-        android:text="Ask Server"
+        android:layout_height="52dp"
+        android:backgroundTint="#539FC6"
+        android:backgroundTintMode="screen"
         android:onClick="onConnectionButtonClick"
+        android:text="Ask Server"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <TextView
         android:id="@+id/outputServer"
         android:layout_width="145dp"
         android:layout_height="221dp"
-        android:gravity="center"
+        android:gravity="bottom|center"
         android:text="Antwort vom Server"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.729" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/aaulogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

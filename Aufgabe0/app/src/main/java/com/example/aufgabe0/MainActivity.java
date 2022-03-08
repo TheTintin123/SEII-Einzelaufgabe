@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import java.util.Arrays;
 
 import java.net.*;
@@ -19,8 +18,6 @@ import java.io.*;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onConnectionButtonClick(View view){
         new ClientThreader().execute();
+        Toast.makeText(this,"ServerButton Clicked!", Toast.LENGTH_SHORT).show();
     }
 
     public void onCalcButtonClick(View view){
-        Toast.makeText(this,"Button Clicked!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"CalcButton Clicked!", Toast.LENGTH_SHORT).show();
         EditText txt = findViewById(R.id.inputNumber);
         StringBuilder output = new StringBuilder();
         int[] arr = new int[8];
@@ -98,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
             } catch (IOException e){
                 e.printStackTrace();
-                
+
             } finally {
                 try {
                     if(socket != null)
